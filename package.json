@@ -1,0 +1,51 @@
+{
+    "name": "alx-files_manager",
+    "version": "1.0.0",
+    "description": "0x04. Files manager",
+    "main": "0-main.js",
+    "scripts": {
+      "lint": "./node_modules/.bin/eslint",
+      "check-lint": "lint [0-9]*.js",
+      "start-server": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
+      "start-worker": "nodemon --exec babel-node --presets @babel/preset-env ./worker.js",
+      "dev": "nodemon --exec babel-node --presets @babel/preset-env",
+      "test": "./node_modules/.bin/mocha --require @babel/register --exit"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "mime-types": "^2.1.27",
+      "mongodb": "^3.5.9",
+      "redis": "^4.0.3",
+      "sha1": "^1.1.1",
+      "uuid": "^8.2.0",
+      "express": "^4.17.2"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.17.0",
+      "@babel/core": "^7.17.2",
+      "@babel/node": "^7.16.8",
+      "@babel/preset-env": "^7.16.11",
+      "@babel/register": "^7.8.0",
+      "bull": "^3.29.3",
+      "chai": "^4.3.6",
+      "chai-http": "^4.3.0",
+      "eslint": "^8.8.0",
+      "eslint-config-airbnb-base": "^14.0.0",
+      "eslint-plugin-import": "^2.25.4",
+      "eslint-plugin-jest": "^22.21.0",
+      "image-thumbnail": "^1.0.14",
+      "mocha": "^9.2.0",
+      "nodemon": "^2.0.15",
+      "request": "^2.88.2",
+      "sinon": "^7.5.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wekesa360/alx-files_manager.git"
+    },
+    "bugs": {
+      "url": "https://github.com/wekesa360/alx-files_manager/issues"
+    },
+    "homepage": "https://github.com/wekesa360/alx-files_manager#readme"
+  }
