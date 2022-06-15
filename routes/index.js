@@ -9,32 +9,32 @@ function router(app) {
     const route = express.Router();
     app.use('/', route);
   
-    route.get('/status', (rq, rs) => {
-      AppController.getStatus(rq, rs);
+    route.get('/status', (req,res) => {
+      AppController.getStatus(req,res);
     });
   
-    route.get('/stats', (rq, rs) => {
-      AppController.getStats(rq, rs);
+    route.get('/stats', (req,res) => {
+      AppController.getStats(req,res);
     });
   
-    route.post('/users', (rq, rs) => {
-      UsersController.postNew(rq, rs);
+    route.post('/users', (req,res) => {
+      UsersController.postNew(req,res);
     });
   
-    route.get('/connect', (rq, rs) => {
-      AuthController.getConnect(rq, rs);
+    route.get('/connect', (req,res) => {
+      AuthController.getConnect(req,res);
     });
   
-    route.get('/disconnect', (rq, rs) => {
-      AuthController.getDisconnect(rq, rs);
+    route.get('/disconnect', (req,res) => {
+      AuthController.getDisconnect(req,res);
     });
   
-    route.get('/users/me', (rq, rs) => {
-      UsersController.getMe(rq, rs);
+    route.get('/users/me', (req,res) => {
+      UsersController.getMe(req,res);
     });
   
-    route.post('/files', (rq, rs) => {
-      FilesController.postUpload(rq, rs);
+    route.post('/files', (req,res) => {
+      FilesController.postUpload(req,res);
     });
   }
   
