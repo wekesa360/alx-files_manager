@@ -18,3 +18,5 @@ class AppController {
         return res.status(200).send(stats);
     }
 }
+
+export default AppController;
